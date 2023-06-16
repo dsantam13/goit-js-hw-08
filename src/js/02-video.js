@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
     const savedTime = localStorage.getItem('videoplayer-current-time');
     if (savedTime) {
         videoPlayer.currentTime = savedTime;
-        player.setCurrentTime(savedTime).then(function (seconds) {
+        player.setCurrentTime(savedTime).then(function () {
                 // seconds = the actual time that the player seeked to
         }).catch(function (error) {
             switch (error.name) {
